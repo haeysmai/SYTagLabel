@@ -1,5 +1,5 @@
 //
-//  TagModel.h
+//  SYTagModel.h
 //  SYTagLabel
 //
 //  Created by apple on 2018/5/22.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TagModel : NSObject
+@interface SYTagModel : NSObject
 
 @property (nonatomic, strong) NSNumber *tagId;
 @property (nonatomic, strong) NSString *tagName;

@@ -7,7 +7,9 @@
 //
 
 #import "SYTagView.h"
-#import "SYTagLabelHeader.h"
+
+#import "SYTagModel.h"
+#import "UILabel+DisplayStatus.h"
 
 static CGFloat marginWidthSpace = 15.f;//text与label左右的间距
 static CGFloat labelHeightSpace = 12.f;//两个label上下的间距
@@ -34,7 +36,7 @@ static CGFloat tagMasLeftWidth = 15.f;//每行第一个tag离父试图的宽度
     if (self) {
         _tagArray = [tags copy];
         __weak typeof(self) weakSelf = self;
-        [_tagArray enumerateObjectsUsingBlock:^(TagModel * tagModel, NSUInteger idx, BOOL * _Nonnull stop) {
+        [_tagArray enumerateObjectsUsingBlock:^(SYTagModel * tagModel, NSUInteger idx, BOOL * _Nonnull stop) {
             weakSelf.tagLabel = [[UILabel alloc] init];
             weakSelf.tagLabel.text = tagModel.tagName;
             weakSelf.tagLabel.tagId = tagModel.tagId;
@@ -64,12 +66,12 @@ static CGFloat tagMasLeftWidth = 15.f;//每行第一个tag离父试图的宽度
         if (![self.subviews[i] isKindOfClass:[UILabel class]]) {
             continue;
         }
-        if (![_tagArray[i] isKindOfClass:[TagModel class]] || _tagArray[i] == nil) {
+        if (![_tagArray[i] isKindOfClass:[SYTagModel class]] || _tagArray[i] == nil) {
             continue;
         }
         
         itemLabel = (UILabel *)self.subviews[i];
-        TagModel *tagModel = (TagModel *)_tagArray[i];
+        SYTagModel *tagModel = (SYTagModel *)_tagArray[i];
         CGFloat width = [self getterLabelTextWidthWithText:tagModel.tagName font:[UIFont systemFontOfSize:15.f] height:tagViewItemHeight];
         preWidth = width;
         

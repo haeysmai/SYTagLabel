@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -101,16 +101,8 @@ Pod::Spec.new do |s|
 
   # ――― Subspec ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  s.subspec 'View' do |ss|
-  	ss.source_files = "Classes/View/*.{h,m}"
-  end
-
-  s.subspec 'Model' do |ss|
-  	ss.source_files = "Classes/Model/*.{h,m}"
-  end
-
-  s.subspec 'Utils' do |ss|
-  	ss.source_files = "Classes/Utils/*.{h,m}"
+  s.subspec 'SYTag' do |ss|
+  	ss.source_files = "Classes/SYTag/*.{h,m}"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -134,7 +126,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = 'UIKit', 'Foundation'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -146,7 +138,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  #  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"

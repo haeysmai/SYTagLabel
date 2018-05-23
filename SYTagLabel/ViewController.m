@@ -63,7 +63,7 @@
     
     NSMutableArray *array = [NSMutableArray array];
     for (int i = 0; i < tagNames.count; i++) {
-        TagModel *tagModel = [[TagModel alloc] init];
+        SYTagModel *tagModel = [[SYTagModel alloc] init];
         tagModel.tagName = tagNames[i];
         tagModel.tagId = @(i + 1);
         [array addObject:tagModel];
