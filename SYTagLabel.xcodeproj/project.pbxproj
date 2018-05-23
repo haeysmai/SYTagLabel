@@ -16,6 +16,7 @@
 		189464A020B43EF600D515E0 /* UILabel+DisplayStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894649F20B43EF600D515E0 /* UILabel+DisplayStatus.m */; };
 		189464A420B4415100D515E0 /* TagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 189464A320B4415100D515E0 /* TagModel.m */; };
 		189464A820B441ED00D515E0 /* SYTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189464A720B441ED00D515E0 /* SYTagView.m */; };
+		189464AB20B5205700D515E0 /* demo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 189464AA20B5205700D515E0 /* demo1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		189464A320B4415100D515E0 /* TagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagModel.m; sourceTree = "<group>"; };
 		189464A620B441ED00D515E0 /* SYTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTagView.h; sourceTree = "<group>"; };
 		189464A720B441ED00D515E0 /* SYTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTagView.m; sourceTree = "<group>"; };
+		189464AA20B5205700D515E0 /* demo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		1894648320B4331400D515E0 /* SYTagLabel */ = {
 			isa = PBXGroup;
 			children = (
+				189464A920B51FF200D515E0 /* Gif */,
 				189464A520B441C600D515E0 /* View */,
 				189464A120B4412A00D515E0 /* Model */,
 				1894649A20B4336200D515E0 /* Utils */,
@@ -108,6 +111,14 @@
 				189464A720B441ED00D515E0 /* SYTagView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		189464A920B51FF200D515E0 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				189464AA20B5205700D515E0 /* demo1.gif */,
+			);
+			path = Gif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 				1894649120B4331A00D515E0 /* LaunchScreen.storyboard in Resources */,
 				1894648E20B4331A00D515E0 /* Assets.xcassets in Resources */,
 				1894648C20B4331400D515E0 /* Main.storyboard in Resources */,
+				189464AB20B5205700D515E0 /* demo1.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
