@@ -37,6 +37,7 @@
 		189464A620B441ED00D515E0 /* SYTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTagView.h; sourceTree = "<group>"; };
 		189464A720B441ED00D515E0 /* SYTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTagView.m; sourceTree = "<group>"; };
 		189464AA20B5205700D515E0 /* demo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo1.gif; sourceTree = "<group>"; };
+		189464AE20B546E700D515E0 /* SYTagLabelHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTagLabelHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +70,8 @@
 		1894648320B4331400D515E0 /* SYTagLabel */ = {
 			isa = PBXGroup;
 			children = (
+				189464AF20B5672600D515E0 /* Classes */,
 				189464A920B51FF200D515E0 /* Gif */,
-				189464A520B441C600D515E0 /* View */,
-				189464A120B4412A00D515E0 /* Model */,
-				1894649A20B4336200D515E0 /* Utils */,
 				1894648420B4331400D515E0 /* AppDelegate.h */,
 				1894648520B4331400D515E0 /* AppDelegate.m */,
 				1894648720B4331400D515E0 /* ViewController.h */,
@@ -119,6 +118,17 @@
 				189464AA20B5205700D515E0 /* demo1.gif */,
 			);
 			path = Gif;
+			sourceTree = "<group>";
+		};
+		189464AF20B5672600D515E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				189464A520B441C600D515E0 /* View */,
+				189464A120B4412A00D515E0 /* Model */,
+				1894649A20B4336200D515E0 /* Utils */,
+				189464AE20B546E700D515E0 /* SYTagLabelHeader.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,9 +7,7 @@
 //
 
 #import "SYTagView.h"
-#import "TagModel.h"
-
-#import "UILabel+DisplayStatus.h"
+#import "SYTagLabelHeader.h"
 
 static CGFloat marginWidthSpace = 15.f;//text与label左右的间距
 static CGFloat labelHeightSpace = 12.f;//两个label上下的间距

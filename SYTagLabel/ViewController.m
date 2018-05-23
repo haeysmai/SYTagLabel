@@ -8,9 +8,7 @@
 
 #import "ViewController.h"
 
-#import "UILabel+DisplayStatus.h"
-#import "SYTagView.h"
-#import "TagModel.h"
+#import "SYTagLabelHeader.h"
 
 @interface ViewController () <SYTagViewDelegate>
 
