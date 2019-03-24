@@ -1,5 +1,5 @@
 language: objective-c
-xcode_project: SYTagLabel/SYTagLabel.xcodeproj 
+xcode_project: ./SYTagLabel.xcodeproj 
 xcode_scheme: SYTagLabel
 osx_image: xcode10
 
