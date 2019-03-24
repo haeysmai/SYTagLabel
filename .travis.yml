@@ -1,8 +1,5 @@
 language: objective-c
-xcode_project: ./SYTagLabel.xcodeproj 
-xcode_scheme: SYTagLabel
 osx_image: xcode10
-
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
