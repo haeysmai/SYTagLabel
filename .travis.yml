@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode10
 
 script:
-- set -o pipefail && xcodebuild -project SYTagLabel.xcodeproj -enableCodeCoverage YES -allowProvisioningUpdates YES | xcpretty
+- set -o pipefail && xcodebuild -project SYTagLabel.xcodeproj -enableCodeCoverage YES | xcpretty
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
