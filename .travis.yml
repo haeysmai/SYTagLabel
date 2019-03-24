@@ -4,7 +4,7 @@ xcode_scheme: SYTagLabel
 osx_image: xcode10
 
 script:
-- set -o pipefail && xcodebuild -project SYTagLabel.xcodeproj -scheme SYTagLabel -sdk iphonesimulator build test | xcpretty
+- set -o pipefail && xcodebuild -project SYTagLabel.xcodeproj -scheme SYTagLabel -sdk iphonesimulator build master | xcpretty
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
