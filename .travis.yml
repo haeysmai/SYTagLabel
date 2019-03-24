@@ -1,10 +1,8 @@
 language: objective-c
-xcode_project: SYTagLabel.xcodeproj 
-xcode_scheme: SYTagLabel
 osx_image: xcode10
 
 script:
-- set -o pipefail && xcodebuild -project SYTagLabel.xcodeproj -scheme SYTagLabel -sdk iphonesimulator build master | xcpretty
+- set -o pipefail && xcodebuild -project SYTagLabel.xcodeproj -enableCodeCoverage YES | xcpretty
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
