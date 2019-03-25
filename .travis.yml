@@ -2,3 +2,6 @@ language: objective-c
 osx_image: xcode10
 xcode_project: SYTagLabel.xcodeproj
 script: xcodebuild -project SYTagLabel.xcodeproj -scheme "SYTagLabel" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
